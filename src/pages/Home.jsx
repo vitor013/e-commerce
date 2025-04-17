@@ -23,8 +23,8 @@ function Home() {
             <h3>{product.title}</h3>
             <p>R$ {product.price.toFixed(2)}</p>
             <div className="actions">
-              <Link to={`/product/${product.id}`}>Ver detalhes</Link>
               <button onClick={() => addToCart(product)}>Adicionar</button>
+              <Link to={`/product/${product.id}`}>Ver detalhes</Link>
             </div>
           </div>
         ))}
